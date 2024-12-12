@@ -1,0 +1,243 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+  .navbar-links{
+    display: flex;
+    column-gap: 20px;
+    
+  }
+  .navbar-links a{
+    text-decoration: none;
+    color: #1d232c;
+  }
+  .navbar-links a:hover{
+    text-decoration: underline;
+
+  }
+  .navbar-menu-toggle{
+    display: none;
+  }
+/* .side-navbar */
+  .side-navbar{
+    background-color: #1d232c;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color: white;
+    transition: 2s;
+    /* display: none; */
+  }
+.side-navbar-link{
+  margin-bottom: 30px;
+}
+
+
+ .side-navbar-links a{
+  text-decoration: none;
+  color: white;
+ }
+
+  
+  /* heder */
+  .header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+  }
+  .header-button{
+    color: white;
+    background-color: black;
+    padding:10 20px;
+    margin:10px 0;
+    border-radius: 10px;
+  }
+  .service{
+    padding: 20px;
+  }
+  .service-container-1{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+
+  }
+  
+  .service-container-2{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+  }
+  .service-container-2 div {
+    background-color:#f2f4f7;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+.new-arrivel{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+}
+.new-arrival-content{
+  position: relative;
+  flex-basis: 20%;
+}
+.new-arrivel button{
+  padding: 10px 20px;
+  margin-top: 10px;
+  color: black;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  border-radius: 10px;
+  border: none;
+  font-size: medium;
+  transition: transform 0.3s ease;
+}
+.new-arrivel button:hover{
+  background: lightblue;
+  /* color: white; */
+  transform: translatex(-10px);
+}
+
+.news{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  margin-top: 20px;
+}
+.news input{
+  padding: 11px;
+  width: 80vw;
+  margin-bottom: 10px;
+  border: solid black 1px;
+}
+.news button{
+  padding: 10px;
+  color: white;
+  background-color: black;
+   border-radius: 10px;
+}
+.contact-form{
+  background-color: #1f2937;
+  color:white;
+  padding: 2em;
+  margin: 2em auto;
+  width: 80%;
+  border-radius: 10px;
+}
+.contact-form h2{
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 40px;
+}
+.contact-form lable{
+  display: block;
+  margin-top: 0.5rem;
+}
+.contact-form input{
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.contact-form button{
+  background-color: #007bff;
+  color:#ffffff;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+
+.footer{
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  padding: 40px;
+}
+.product-section{
+  margin-top: 20px;
+  
+}
+.product-search{
+  width: 80%;
+  border: solid black 2px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: auto;
+  align-items: center;
+}
+.product-search input{
+  border: none;
+  background-color: transparent;
+  width: 100%;
+}
+.product-search input:focus{
+  outline: none;
+}
+.products{
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.products-box{
+  text-align: center;
+  flex-basis: 20%;
+}
+.products-box img{
+  border-radius: 20px 1px;
+}
+
+
+
+
+
+  /* media query */
+  @media screen and (max-width:700px){
+    .navbar-menu-toggle{display: block;
+    }
+    .navbar-links{
+      display: none;
+    }
+    .header-image{
+      display: none;
+    }
+    .service-container-1{
+      display:none;
+    }
+    .service-container-2{
+      flex-direction: column;
+    }
+    
+  }
+  
